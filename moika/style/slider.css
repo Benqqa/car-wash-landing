@@ -1,0 +1,178 @@
+.main-slider {
+  position: relative; }
+
+.main-slider__control {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 100px;
+  height: 100px;
+  -webkit-transform: translate(-50%, 50%);
+  -ms-transform: translate(-50%, 50%);
+  transform: translate(-50%, 50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .main-slider__control:after {
+    content: '';
+    background-color: #fff;
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg); }
+
+.control-main-slider__arrow {
+  position: relative;
+  z-index: 2;
+  cursor: pointer; }
+
+.control-main-slider__decor {
+  position: relative;
+  z-index: 2;
+  margin: 12px;
+  -webkit-animation: rot 5s infinite linear;
+  animation: rot 5s infinite linear; }
+
+@-webkit-keyframes rot {
+  0% { }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+@keyframes rot {
+  0% { }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+.item-main-slider {
+  text-align: center;
+  position: relative;
+  padding: 35px 0 100px 0; }
+
+.item-main-slider__content {
+  z-index: 5;
+  position: relative; }
+
+.item-main-slider__bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0; }
+
+.btn {
+  display: inline-block;
+  position: relative; }
+  .btn:before, .btn:after {
+    position: absolute;
+    left: 0;
+    content: "";
+    height: 3px;
+    width: 100%; }
+  .btn:before {
+    background-color: #c3a774;
+    top: 0;
+    content: ""; }
+  .btn:after {
+    bottom: 0;
+    background-color: #8f6620;
+    content: ""; }
+  .btn__body {
+    position: relative; }
+    .btn__body:before, .btn__body:after {
+      content: '';
+      position: absolute;
+      top: -110%;
+      height: 300%;
+      width: 3px;
+      background-image: -webkit-gradient(linear, left bottom, left top, from(#8f6620), to(#c3a774));
+      background-image: -webkit-linear-gradient(bottom, #8f6620, #c3a774);
+      background-image: -o-linear-gradient(bottom, #8f6620, #c3a774);
+      background-image: linear-gradient(to top, #8f6620, #c3a774); }
+    .btn__body:before {
+      left: 0; }
+    .btn__body:after {
+      right: 0; }
+    .btn__body span {
+      display: -webkit-inline-box;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      padding: 0;
+      min-height: 50px;
+      color: white;
+      font-size: 15px;
+      text-transform: uppercase;
+      font-family: "pfdin";
+      letter-spacing: 2px;
+      padding: 0 50px;
+      position: relative; }
+      .btn__body span:after {
+        content: '';
+        -webkit-transition: height 0.5s ease 0s;
+        -o-transition: height 0.5s ease 0s;
+        transition: height 0.5s ease 0s;
+        height: 50%;
+        opacity: 0.06;
+        background-image: -webkit-gradient(linear, left bottom, left top, from(#bb9c66), to(rgba(187, 156, 102, 0)));
+        background-image: -webkit-linear-gradient(bottom, #bb9c66 0%, rgba(187, 156, 102, 0) 100%);
+        background-image: -o-linear-gradient(bottom, #bb9c66 0%, rgba(187, 156, 102, 0) 100%);
+        background-image: linear-gradient(to top, #bb9c66 0%, rgba(187, 156, 102, 0) 100%);
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0; }
+  @media (min-width: 950px) {
+    .btn:hover .btn__body span:after {
+      content: '';
+      height: 100%;
+      opacity: 0.3; } }
+  .btn.fw {
+    width: 100%; }
+
+._ibg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center; }
+
+.title__item {
+  font-family: "ceremonious";
+  color: gold;
+  font-size: 40px;
+  padding: 0 0 0.45em 0; }
+
+.title__text {
+  color: gold;
+  font-size: 15px;
+  line-height: calc(25/15);
+  max-width: 700px;
+  margin: 20px auto 55px auto; }
+
+.titel__main {
+  font-family: "pfdin";
+  letter-spacing: 5.25px;
+  font-size: 30px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 400; }
+
+.item-main-slider__btn {
+  margin: 58px 0 0 0; }

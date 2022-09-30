@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Умная автомойка</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="style/nav.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style/page__video.css">
+	<link rel="stylesheet" href="style/wrapper.css">
+
+	<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+	<!-- Swiper library -->
+<link href="https://cdn.jsdelivr.net/npm/swiper@5.3.6/css/swiper.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/swiper@5.3.6/js/swiper.min.js"></script>
+<!-- Vue library -->
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<!-- vue-awesome-swiper -->
+<script src="https://cdn.jsdelivr.net/npm/vue-awesome-swiper"></script>
+
+</head>
+<body>
+	<div class="wrapper">
+	<div class="nav">
+		<div class="container">
+
+			
+				<div class="nav__row">
+					<div class="null"></div>
+						<a href="" class="nav__logo"><img src="img/logo.png"><p>+79819030068</p></a>
+
+					<div class="nav__menu menu">
+						<div class="menu__icon icon__menu">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li><a href="#adress" class="menu__link">Адреса</a></li>
+								<li><a href="#" class="menu__link">Партнерам</a></li>
+								<li><a href="#sale" class="menu__link">Акции</a></li>
+								<li><a href="#" class="menu__link">Компаниям</a></li>
+								
+							</ul>
+						</nav>
+					</div>
+					<div class="nav__actions act-nav">
+						<a class="act-nav__region"><span>+79819030068</span></a>
+						<div class="act-nav__user user-nav">
+							<div class="user-nav__icon"><img src="icon/ico_man_2.svg" alt=""></div>
+							<ul class="user-nav__menu">
+								
+					
+										<li>
+											<a href="" class="user-nav__link user_nav__link1">vk</a>
+										</li>
+										<li>
+											<a href="" class="user-nav__link user_nav__link2">whatsapp</a>
+										</li>
+										<li>
+											<a href="" class="user-nav__link user_nav__link3">instagram</a>
+										</li>
+										<li>
+											<a href="" class="user-nav__link user_nav__link4">telegram</a>
+										</li>
+								
+							</ul>
+							
+						</div>
+						
+					</div>
+			</div>
+			</div>
+		</div>
+	<main class="page">
+			
+			<div class="page__video video">
+				 
+				 <div class="video__info">
+				<div class="video__htitle">Чистая машина за 5 минут на мойке без щёток, не выходя
+из авто и без очередей</div>
+				<div class="video_subtitle">БЫСТРО / БЕЗОПАСНО / БЕЗ ЩЁТОК</div>
+				
+					<a href="#sale" class="video__btn">Скидка на мойку</a>
+
+			</div>
+			</div>
+			<div class="page__info info">
+				<div class="info__list">
+					<div class="info_block item1">
+						<div class="info__title">БЫСТРО</div>
+						<div class="info__text">Экономим время. Скорость мойки автомобиля от 3 до 10 минут</div>
+					</div>
+					<div class="info_block item2">
+						<div class="info__title">БЕЗ ЩЁТОК</div>
+						<div class="info__text">Заботимся о кузове автомобиля. Моем без тряпок и щёток</div>
+					</div>
+					<div class="info_block item3">
+						<div class="info__title">УДОБНО</div>
+						<div class="info__text">С комфортом. Вам не нужно выходить из автомобиля на протяжении всей мойки.</div>
+					</div>
+					<div class="info_block item4">
+						<div class="info__title">НЕДОРОГО</div>
+						<div class="info__text">Выгоднее чем на мойке самообслуживания. Цена от 150 руб.</div>
+					</div>
+				</div>
+			</div>
+			<div class="page__steps staps">
+				<div class="staps__info">
+					<div class="staps__title">Этапы мойки автомобиля</div>
+					<div class="staps__text">Полный цикл мойки автомобиля занимает от 3 до 10 минут в зависимости от программы и состоит из 8 основных этапов</div>
+				</div>
+				<div class="staps__list">
+					<div id="staps__block" class="staps__block  ">
+						<div class="staps__img">
+							<div class="staps__subtitle">Сушка</div>
+						</div>
+						<div class="staps__subtext">Осуществляется бесконтактным способом. Работают сразу четыре двигателя с высокой мощностью, которые делают автомобиль сухим по всей поверхности.</div>
+					</div>
+					<div id="staps__block"class="staps__block">
+						<div class="staps__img">
+							<div class="staps__subtitle">Мойка днища</div>
+						</div>
+						<div class="staps__subtext">Первый состав химии. Жидкая эмульсия обладает высокими проникающими свойствами. Обеспечивает эффективное расщепление грязи.</div>
+					</div>
+					<div id="staps__block"class="staps__block">
+						<div class="staps__img">
+							<div class="staps__subtitle">Мойка высоким давлением</div>
+						</div>
+						<div class="staps__subtext">Система предварительной мойки автомобиля осуществляет: мойку днища, порогов, дисков и арок автомобиля. Особенно актуальна в зимнее время.</div>
+					</div>
+					<div id="staps__block"class="staps__block">
+						<div class="staps__img">
+							<div class="staps__subtitle">Нанесение эмульсии</div>
+						</div>
+						<div class="staps__subtext">Мойка автомобиля осуществляется равномерным потоком воды по всей поверхности кузова. Уникальная бесконтактная технология, которая бережёт лакокрасочное покрытие вашего автомобиля.</div>
+					</div>
+					<div id="staps__block"class="staps__block">
+						<div class="staps__img">
+							<div class="staps__subtitle">Нанесение пены</div>
+						</div>
+						<div class="staps__subtext">Второй состав химии. Обеспечивает максимальное покрытие всего кузова автомобиля.</div>
+					</div>
+					<div id="staps__block"class="staps__block">
+						<div class="staps__img">
+							<div class="staps__subtitle">Воск</div>
+						</div>
+						<div class="staps__subtext">Покрытие автомобиля воском помогает улучшить сушку автомобиля за счёт гидрофобных свойств и обеспечивает дополнительную защиту кузова автомобиля.</div>
+					</div>
+				</div>
+			</div>
+			<div class="adress">
+				<div class="staps__info">
+					<div class="staps__title">Адреса автомоек</div>
+					<div class="staps__text">Листайте вправо, чтобы посмотреть адреса действующих автомоек</div>
+				</div>
+
+
+
+				<div id="vueapp">
+  	<swiper
+    ref="swiperComponent"
+    :options="swiperOptions"
+    
+    @set-translate="onSetTranslate"
+    @tap="onSwiperClickSlide"
+  >
+    <swiper-slide><div class="adress__item">
+						<div class="adress__img"><img src="" alt=""></div>
+						<div class="adress__body">
+								<div class="adress__lable">СКОРО ОТКРЫТИЕ!</div>
+								<div class="adress__title">г. Москва,<br>Пятницкое шоссе 27 </div>
+								<div class="adress__subtitle">Автомойка находится на территории АЗС "BP"</div>
+						</div>
+						<a href="#" class="adress__btn">Построить маршрут</a>
+					</div></swiper-slide>
+    <swiper-slide><div class="adress__item">
+						<div class="adress__img"><img src="" alt=""></div>
+						<div class="adress__body">
+								<div class="adress__lable">СКОРО ОТКРЫТИЕ!</div>
+								<div class="adress__title">г. Москва,<br>Пятницкое шоссе 27 </div>
+								<div class="adress__subtitle">Автомойка находится на территории АЗС "BP"</div>
+						</div>
+						<a href="#" class="adress__btn">Построить маршрут</a>
+					</div></swiper-slide>
+    <swiper-slide><div class="adress__item">
+						<div class="adress__img"><img src="" alt=""></div>
+						<div class="adress__body">
+								<div class="adress__lable">СКОРО ОТКРЫТИЕ!</div>
+								<div class="adress__title">г. Москва,<br>Пятницкое шоссе 27 </div>
+								<div class="adress__subtitle">Автомойка находится на территории АЗС "BP"</div>
+						</div>
+						<a href="#" class="adress__btn">Построить маршрут</a>
+					</div></swiper-slide>
+    <swiper-slide><div class="adress__item">
+						<div class="adress__img"><img src="" alt=""></div>
+						<div class="adress__body">
+								<div class="adress__lable">СКОРО ОТКРЫТИЕ!</div>
+								<div class="adress__title">г. Москва,<br>Пятницкое шоссе 27 </div>
+								<div class="adress__subtitle">Автомойка находится на территории АЗС "BP"</div>
+						</div>
+						<a href="#" class="adress__btn">Построить маршрут</a>
+					</div></swiper-slide>
+    <swiper-slide><div class="adress__item">
+						<div class="adress__img"><img src="" alt=""></div>
+						<div class="adress__body">
+								<div class="adress__lable">СКОРО ОТКРЫТИЕ!</div>
+								<div class="adress__title">г. Москва,<br>Пятницкое шоссе 27 </div>
+								<div class="adress__subtitle">Автомойка находится на территории АЗС "BP"</div>
+						</div>
+						<a href="#" class="adress__btn">Построить маршрут</a>
+					</div></swiper-slide>
+    <swiper-slide><div class="adress__item">
+						<div class="adress__img"><img src="" alt=""></div>
+						<div class="adress__body">
+								<div class="adress__lable">СКОРО ОТКРЫТИЕ!</div>
+								<div class="adress__title">г. Москва,<br>Пятницкое шоссе 27 </div>
+								<div class="adress__subtitle">Автомойка находится на территории АЗС "BP"</div>
+						</div>
+						<a href="#" class="adress__btn">Построить маршрут</a>
+					</div></swiper-slide>
+    <div class="swiper-pagination swiper-pagination-black"  slot="pagination"></div>
+    <div class="swiper-button-prev swiper-button-black" slot="button-prev"></div>
+    <div class="swiper-button-next swiper-button-black" slot="button-next"></div>
+  </swiper>
+	</div>
+
+
+
+				<div class="adress__grid">
+					<div class="adress__item">
+						<div class="adress__img"><img src="" alt=""></div>
+						<div class="adress__body">
+								<div class="adress__lable">СКОРО ОТКРЫТИЕ!</div>
+								<div class="adress__title">г. Москва,<br>Пятницкое шоссе 27 </div>
+								<div class="adress__subtitle">Автомойка находится на территории АЗС "BP"</div>
+						</div>
+						<a href="#" class="adress__btn">Построить маршрут</a>
+					</div>
+					<div class="adress__item">
+						<div class="adress__img"><img src="" alt=""></div>
+						<div class="adress__body">
+								<div class="adress__lable">СКОРО ОТКРЫТИЕ!</div>
+								<div class="adress__title">г. Москва,<br>Пятницкое шоссе 27 </div>
+								<div class="adress__subtitle">Автомойка находится на территории АЗС "BP"</div>
+						</div>
+						<a href="#" class="adress__btn">Построить маршрут</a>
+					</div>
+					<div class="adress__item">
+						<div class="adress__img"><img src="" alt=""></div>
+						<div class="adress__body">
+								<div class="adress__lable">СКОРО ОТКРЫТИЕ!</div>
+								<div class="adress__title">г. Москва,<br>Пятницкое шоссе 27 </div>
+								<div class="adress__subtitle">Автомойка находится на территории АЗС "BP"</div>
+						</div>
+						<a href="#" class="adress__btn">Построить маршрут</a>
+					</div>
+					<div class="adress__item">
+						<div class="adress__img"><img src="" alt=""></div>
+						<div class="adress__body">
+								<div class="adress__lable">СКОРО ОТКРЫТИЕ!</div>
+								<div class="adress__title">г. Москва,<br>Пятницкое шоссе 27 </div>
+								<div class="adress__subtitle">Автомойка находится на территории АЗС "BP"</div>
+						</div>
+						<a href="#" class="adress__btn">Построить маршрут</a>
+					</div>
+					<div class="adress__item">
+						<div class="adress__img"><img src="" alt=""></div>
+						<div class="adress__body">
+								<div class="adress__lable">СКОРО ОТКРЫТИЕ!</div>
+								<div class="adress__title">г. Москва,<br>Пятницкое шоссе 27 </div>
+								<div class="adress__subtitle">Автомойка находится на территории АЗС "BP"</div>
+						</div>
+						<a href="#" class="adress__btn">Построить маршрут</a>
+					</div>
+					<div class="adress__item">
+						<div class="adress__img"><img src="" alt=""></div>
+						<div class="adress__body">
+								<div class="adress__lable">СКОРО ОТКРЫТИЕ!</div>
+								<div class="adress__title">г. Москва,<br>Пятницкое шоссе 27 </div>
+								<div class="adress__subtitle">Автомойка находится на территории АЗС "BP"</div>
+						</div>
+						<a href="#" class="adress__btn">Построить маршрут</a>
+					</div>
+					<div class="adress__item">
+						<div class="adress__img"><img src="" alt=""></div>
+						<div class="adress__body">
+								<div class="adress__lable">СКОРО ОТКРЫТИЕ!</div>
+								<div class="adress__title">г. Москва,<br>Пятницкое шоссе 27 </div>
+								<div class="adress__subtitle">Автомойка находится на территории АЗС "BP"</div>
+						</div>
+						<a href="#" class="adress__btn">Построить маршрут</a>
+					</div>
+					<div class="adress__item">
+						<div class="adress__img"><img src="" alt=""></div>
+						<div class="adress__body">
+								<div class="adress__lable">СКОРО ОТКРЫТИЕ!</div>
+								<div class="adress__title">г. Москва,<br>Пятницкое шоссе 27 </div>
+								<div class="adress__subtitle">Автомойка находится на территории АЗС "BP"</div>
+						</div>
+						<a href="#" class="adress__btn">Построить маршрут</a>
+					</div>
+					<div class="adress__item">
+						<div class="adress__img"><img src="" alt=""></div>
+						<div class="adress__body">
+								<div class="adress__lable">СКОРО ОТКРЫТИЕ!</div>
+								<div class="adress__title">г. Москва,<br>Пятницкое шоссе 27 </div>
+								<div class="adress__subtitle">Автомойка находится на территории АЗС "BP"</div>
+						</div>
+						<a href="#" class="adress__btn">Построить маршрут</a>
+					</div>
+					<div class="adress__item">
+						<div class="adress__img"><img src="" alt=""></div>
+						<div class="adress__body">
+								<div class="adress__lable">СКОРО ОТКРЫТИЕ!</div>
+								<div class="adress__title">г. Москва,<br>Пятницкое шоссе 27 </div>
+								<div class="adress__subtitle">Автомойка находится на территории АЗС "BP"</div>
+						</div>
+						<a href="#" class="adress__btn">Построить маршрут</a>
+					</div>
+					<div class="adress__item">
+						<div class="adress__img"><img src="" alt=""></div>
+						<div class="adress__body">
+								<div class="adress__lable">СКОРО ОТКРЫТИЕ!</div>
+								<div class="adress__title">г. Москва,<br>Пятницкое шоссе 27 </div>
+								<div class="adress__subtitle">Автомойка находится на территории АЗС "BP"</div>
+						</div>
+						<a href="#" class="adress__btn">Построить маршрут</a>
+					</div>
+				</div>
+			</div>
+			<div class="result">
+				<div class="staps__info">
+					<div class="staps__title">Результаты мойки</div>
+					<div class="staps__text">Мы достигли лучшего результата в технологии бесконтактной мойки</div>
+				</div>
+				<div class="result__grid">
+					<div class="result__img res__item1"></div>
+					<div class="result__img res__item2"></div>
+					<div class="result__img res__item3"></div>
+					<div class="result__img res__item4"></div>
+					<div class="result__img res__item5"></div>
+					<div class="result__img res__item6"></div>
+					<div class="result__img res__item7"></div>
+					<div class="result__img res__item8"></div>
+				</div>
+			</div>
+			<div class="programs">
+				<div class="programs__container">
+				<div class="staps__info">
+					<div class="staps__title">4 программы</div>
+					<div class="staps__text">Цены и программы могут отличаться в зависимости от местоположения автомойки</div>
+				</div>
+				<div class="programs__block">
+					<div id="programs__item" class="programs__item">
+						<div class="programs__body">
+							<div class="programs__title">УЛЬТРА БЫСТРАЯ</div>
+							<div class="programs__subtitle">занимает 3 минуты</div>
+							<div class="programs__price">150 р.</div>
+							<div class="programs__text">
+								<li>Очистит: стекла, фары, ручки и зеркала</li>
+							</div>
+						</div>
+						<a href="#sale" class="programs__btn">Попробовать</a>
+					</div>
+					<div id="programs__item" class="programs__item">
+						<div class="programs__body">
+							<div class="programs__title">БЫСТРАЯ</div>
+							<div class="programs__subtitle">занимает 5 минут</div>
+							<div class="programs__price">300 р.</div>
+							<div class="programs__text">
+								<li>2е Мойки высоким давлением</li>
+								<li>Мойка кузова один вид пены</li>
+							</div>
+						</div>
+						<a href="#sale" class="programs__btn">Попробовать</a>
+					</div>
+					<div id="programs__item" class="programs__item">
+						<div class="programs__body">
+							<div class="programs__title">ОПТИМАЛЬНАЯ</div>
+							<div class="programs__subtitle">занимает 8 минут</div>
+							<div class="programs__price">450 р.</div>
+							<div class="programs__text">
+								<li>Мойка днища, дисков и порогов</li>
+								<li>2е Мойки высоким давлением</li>
+								<li>Мойка кузова 2 вида пены</li>
+								<li>1-а фазная сушка вентилятором</li>
+							</div>
+						</div>
+						<a href="#sale" class="programs__btn">Попробовать</a>
+					</div>
+					<div id="programs__item" class="programs__item">
+						<div class="programs__body">
+							<div class="programs__title">СТАНДАРТНАЯ</div>
+							<div class="programs__subtitle">занимает 12 минут</div>
+							<div class="programs__price">600 р.</div>
+							<div class="programs__text">
+								<li>Мойка днища, дисков и порогов</li>
+								<li>2е Мойки высоким давлением</li>
+								<li>Мойка кузова 3 вида пены</li>
+								<li>Жидкая сушка</li>
+								<li>2-ух фазная сушка вентилятором</li>
+							</div>
+						</div>
+						<a href="#sale" class="programs__btn">Попробовать</a>
+					</div>
+				</div>
+			</div>
+			</div>
+			 <div class="compare">
+				<div class="programs__container">
+					<div class="compare__block">
+						<div class="compare__body">
+							<div class="compare__title">Сравни результаты "до" и "после"</div>
+							 <div class="compare__text">Посмотрите полный процесс мойки автомобиля на "Умной мойке". Автомобиль заезжает в бокс с хорошо заметными загрязнениями. В процессе осуществляется самая простая программа: вода, эмульсия, вода и ничего больше. В итоге, автомобиль выезжает чистым.</div>
+						</div>
+						<div class="compare__videos">
+							<div class="compare__video"></div>
+							<div class="compare__subtext">
+								<div class="compare__ltitle">Умная мойка</div>
+								<div class="compare__ltext">Посмотрите весь процесс от начала и до конца</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			 </div>
+			 <div class="reviews">
+			 	<div class="programs__container">
+			 		<div class="staps__info">
+					<div class="staps__title">Реальные отзывы клиентов</div>
+					<div class="staps__text">Большая часть наших клиентов выбирают "Умную мойку" потому что она экономит время ⌛</div>
+				</div>
+				<div class="reviews__grid">
+					<div class="reviews__video"></div>
+					<div class="reviews__video"></div>
+					<div class="reviews__video"></div>
+					<div class="reviews__video"></div>
+				</div>
+			 	</div>
+			 </div>
+			<div class="advantages">
+			
+			 		<div class="staps__info programs__container">
+					<div class="staps__title">Наши преимущества</div>
+					<div class="staps__text">Мы не просто хорошо моем автомобили, мы делаем это круто и не так как все, листай ➟</div>
+				</div>
+					<div id="vueapp2">
+						<swiper
+    ref="swiperComponent"
+    :options="swiperOptions"
+    
+    @set-translate="onSetTranslate"
+    @tap="onSwiperClickSlide"
+  >
+    <swiper-slide>
+    <div class="programs__container">
+    	<div class="advantages__block">
+    		<div class="advantages__img"></div>
+    		<div class="advantages__text ">
+    			<div class="advantages__title">Все виды оплаты</div>
+    			<div class="advantages__subtext">На нашей мойке очень доступные цены. В программе заложено несколько вариантов мойки от 150 рублей. Стоимость меняется в зависимости от выбранной программы. Время мойки занимает 3-10 мин.
+
+															Больше нет смысла пачкаться и мокнуть на мойке самообслуживания или переплачивать за ручную мойку автомобиля.</div>
+    		</div>
+    	</div>
+    </div>
+    </swiper-slide>
+    <swiper-slide>
+    	<div class="programs__container">
+    	<div class="advantages__block">
+    		<div class="advantages__img"></div>
+    		<div class="advantages__text">
+    			<div class="advantages__title">Все виды оплаты</div>
+    			<div class="advantages__subtext">На нашей мойке очень доступные цены. В программе заложено несколько вариантов мойки от 150 рублей. Стоимость меняется в зависимости от выбранной программы. Время мойки занимает 3-10 мин.
+
+Больше нет смысла пачкаться и мокнуть на мойке самообслуживания или переплачивать за ручную мойку автомобиля.</div>
+    		</div>
+    	</div>
+    </div>
+    </swiper-slide>
+    <swiper-slide>
+    	<div class="programs__container">
+    	<div class="advantages__block">
+    		<div class="advantages__img"></div>
+    		<div class="advantages__text">
+    			<div class="advantages__title">Все виды оплаты</div>
+    			<div class="advantages__subtext">На нашей мойке очень доступные цены. В программе заложено несколько вариантов мойки от 150 рублей. Стоимость меняется в зависимости от выбранной программы. Время мойки занимает 3-10 мин.
+
+Больше нет смысла пачкаться и мокнуть на мойке самообслуживания или переплачивать за ручную мойку автомобиля.</div>
+    		</div>
+    	</div>
+    	</div>
+    </swiper-slide>
+    <swiper-slide>
+    	<div class="programs__container">
+    	<div class="advantages__block">
+    		<div class="advantages__img"></div>
+    		<div class="advantages__text">
+    			<div class="advantages__title">Все виды оплаты</div>
+    			<div class="advantages__subtext">На нашей мойке очень доступные цены. В программе заложено несколько вариантов мойки от 150 рублей. Стоимость меняется в зависимости от выбранной программы. Время мойки занимает 3-10 мин.
+
+Больше нет смысла пачкаться и мокнуть на мойке самообслуживания или переплачивать за ручную мойку автомобиля.</div>
+    		</div>
+    	</div>
+    	</div>
+    </swiper-slide>
+    <swiper-slide>
+    	<div class="programs__container">
+    	<div class="advantages__block">
+    		<div class="advantages__img"></div>
+    		<div class="advantages__text">
+    			<div class="advantages__title">Все виды оплаты</div>
+    			<div class="advantages__subtext">На нашей мойке очень доступные цены. В программе заложено несколько вариантов мойки от 150 рублей. Стоимость меняется в зависимости от выбранной программы. Время мойки занимает 3-10 мин.
+
+Больше нет смысла пачкаться и мокнуть на мойке самообслуживания или переплачивать за ручную мойку автомобиля.</div>
+    		</div>
+    	</div>
+    	</div>
+    </swiper-slide>
+    
+    <div class="swiper-pagination swiper-pagination-black"  slot="pagination"></div>
+    <div class="swiper-button-prev swiper-button-black" slot="button-prev"></div>
+    <div class="swiper-button-next swiper-button-black" slot="button-next"></div>
+  </swiper>
+</div>
+</div>
+<form id="sale" method='get'action="" class="form__block ">
+	<div  class="form__sale programs__container">
+		<div class="staps__info programs__container">
+					<div class="staps__title">Скидка на мойку</div>
+					<div class="staps__text">Мы пришлём сообщение с промокодом на первую мойку, чтобы вы попробовали наш сервис на выгодных условиях</div>
+		</div>
+		<div class="form__body">
+			<input type="text" class="form__item form-item1" required placeholder="Ваше имя">
+			<input type="phone" class="form__item form-item2" required value="+7 " placeholder="(999) 999-99-99">
+			<select name="city" id="city" class="form__item form-item3" required>
+           <option value="city_1">СПБ</option>
+           <option value="city_2">Москва</option>
+           <option value="city_2">Тверь</option>
+           <span>Выберите город</span>
+         </select>
+
+			<input type="submit" value="Получить промокод" class=" form-item4">
+		</div>
+	</div>	
+</form>
+<div class="map__block">
+	<div class="map__map">
+		<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A8513cf4e8089eb168d18ca413d8f164dacdf0b7aa74ee1686f8740f40a0f08a8&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe></div>
+
+<div id="adress" class="map__info">
+	<div class="map__title">Адреса наших автомоек:</div>
+	<ul class="map__list">
+		<li class=""><a href="#" class="map__item">Москва, пр. Вернадского 86Д (новая!)</a></li>
+		<li class=""><a href="#" class="map__item">Москва, пр. Вернадского 86Д (новая!)</a></li>
+		<li class=""><a href="#" class="map__item">Москва, пр. Вернадского 86Д (новая!)</a></li>
+		<li class=""><a href="#" class="map__item">Москва, пр. Вернадского 86Д (новая!)</a></li>
+		<li class=""><a href="#" class="map__item">Москва, пр. Вернадского 86Д (новая!)</a></li>
+		<li class=""><a href="#" class="map__item">Москва, пр. Вернадского 86Д (новая!)</a></li>
+		<li class=""><a href="#" class="map__item">Москва, пр. Вернадского 86Д (новая!)</a></li>
+		<li class=""><a href="#" class="map__item">Москва, пр. Вернадского 86Д (новая!)</a></li>
+		<li class=""><a href="#" class="map__item">Москва, пр. Вернадского 86Д (новая!)</a></li>
+	</ul>
+	<div class="map__icons">
+		<div class="map__icon"><img src="" alt=""></div>
+		<div class="map__icon"><img src="" alt=""></div>
+		<div class="map__icon"><img src="" alt=""></div>
+		<div class="map__icon"><img src="" alt=""></div>
+	</div>
+	<div class="map__footer">
+		<div class="map__text">Наш офис: Москва, Барклая 6 стр.5</div>
+		<div class="map__text">Телефон: +7 (499) 490-04-35</div>
+		<div class="map__text">E-mail: info@intelwash.ru</div>
+		<div class="map__text">Написать директору: director@intelwash.ru</div>
+	</div>
+</div>
+	</div>
+	<footer>
+		<hr>
+		<div class="line">"Умная мойка". Все права защищиены</div>
+
+	</footer>
+	</main>
+	</div>
+	<script type="text/javascript" src="js/scrip.js"></script>
+	<script>
+		var isScrolling = false;
+ 
+window.addEventListener("scroll", throttleScroll, false);
+ 
+function throttleScroll(e) {
+    if (isScrolling == false ) {
+        window.requestAnimationFrame(function() {
+          dealWithScrolling(e);
+          isScrolling = false;
+        });
+    }
+    isScrolling = true;
+}   
+ 
+function dealWithScrolling(e) {
+    // do epic stuff    
+    console.log("Scrolling");
+    anim("#staps__block",'animate__fadeInUp',3,"p",0);
+    anim(".staps__info","animate__fadeIn",0,"p",0);
+    anim('.adress__item','animate__fadeInUp',1,"p",0);
+    anim('#programs__item',"animate__fadeInUp",4,"p",1);
+    
+}
+function anim(id,clas,delay_count,Visible,start_delay){
+	els=document.querySelectorAll(id);
+	k=start_delay;
+	console.log(els);
+    for (var i=0; i<els.length; i++) {
+    	if(isPartiallyVisible(els[i]) && Visible=="p"){
+    		els[i].classList.add('animate__animated', clas,"d"+k);
+    		if(k<delay_count-1){
+    			k++;
+
+    		}
+    		else{
+    			k=0;
+    		}
+    	}
+    	if(isFullyVisible(els[i]) && Visible=="f"){
+    		els[i].classList.add('animate__animated', clas,"d"+k);
+    		if(k<delay_count-1){
+    			k++;
+
+    		}
+    		else{
+    			k=0;
+    		}
+    	}
+    }
+}
+
+		function isPartiallyVisible(el) {
+    var elementBoundary = el.getBoundingClientRect();
+ 
+    var top = elementBoundary.top;
+    var bottom = elementBoundary.bottom;
+    var height = elementBoundary.height;
+ 
+    return ((top + height >= 0) && (height + window.innerHeight >= bottom));
+}
+function isFullyVisible(el) {
+  var elementBoundary = el.getBoundingClientRect();
+ 
+  var top = elementBoundary.top;
+  var bottom = elementBoundary.bottom;
+ 
+  return ((top >= 0) && (bottom <= window.innerHeight));
+}
+
+Vue.use(VueAwesomeSwiper)
+
+new Vue({
+  el: '#vueapp',
+  data: {
+    swiperOptions: {
+      slidesPerView: 1,
+          spaceBetween: 0,
+          freeMode: true,
+          autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true
+          },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+      }
+    }
+  },
+  methods: {
+    onSetTranslate() {
+      console.log('onSetTranslate')
+    },
+    onSwiperSlideChangeTransitionStart() {
+      console.log('onSwiperSlideChangeTransitionStart')
+    },
+    onSwiperClickSlide(index, reallyIndex) {
+      console.log('Swiper click slide!', reallyIndex)
+    }
+  },
+  mounted() {
+    console.log('Swiper instances:', this.$refs.swiperComponent.$swiper, this.swiper)
+  }
+})
+new Vue({
+  el: '#vueapp2',
+  data: {
+    swiperOptions: {
+      slidesPerView: 1,
+          spaceBetween: 0,
+          freeMode: false,
+          autoplay: {
+        delay: 4500,
+        disableOnInteraction: false,
+      },
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true
+          },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+      }
+    }
+  },
+  methods: {
+    onSetTranslate() {
+      console.log('onSetTranslate')
+    },
+    onSwiperSlideChangeTransitionStart() {
+      console.log('onSwiperSlideChangeTransitionStart')
+    },
+    onSwiperClickSlide(index, reallyIndex) {
+      console.log('Swiper click slide!', reallyIndex)
+    }
+  },
+  mounted() {
+    console.log('Swiper instances:', this.$refs.swiperComponent.$swiper, this.swiper)
+  }
+})
+
+	</script>
+</body>
+</html>
